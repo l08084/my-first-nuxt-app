@@ -6,7 +6,6 @@
         <li v-for="item in items" :key="item.id">
           <h4>
             <span>{{item.title}}</span>
-            <small> by {{item.user.id}}</small>
             <small>
               <span>by </span>
               <nuxt-link :to="`/users/${item.user.id}`">
